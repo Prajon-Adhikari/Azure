@@ -1,5 +1,5 @@
 import React from "react";
-import azureHeroImage from "../assets/azureLanging01.jpg";
+import heroImage from "../assets/azureLanging01.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import Features from "./Features";
@@ -7,8 +7,8 @@ import Reviews from "./Reviews";
 const Home = () => {
   return (
     <>
-      <div className="relative w-full h-[100vh] flex items-center mt-[65px] px-[135px]">
-        <div className="relative  w-[600px]">
+      <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-">
+        <div className=" w-[600px]">
           <p className="mb-5 font-bold">NEXT GENERATION TECHNOLOGY</p>
           <p className="font-bold text-7xl">
             Revolutionalize The Future of{" "}
@@ -31,7 +31,6 @@ const Home = () => {
             <button className="absolute right-1 top-1/2 transform -translate-y-1/2 bg-[#da183f] cursor-pointer text-white px-5 pb-[10px] pt-[9px] rounded-full text-sm hover:bg-[#e3586f]">
               Search &rarr;
             </button>
-            
           </div>
           <div className="mt-12 flex gap-8">
               <button className="bg-black text-white px-8 py-2 rounded-[4px] font-semibold cursor-pointer hover:shadow-[0px_0px_5px_black]">Key Features</button>
