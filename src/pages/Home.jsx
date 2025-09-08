@@ -18,6 +18,7 @@ import coding3 from "../assets/coding3.jpg";
 import coding4 from "../assets/coding4.jpg";
 import coding5 from "../assets/coding5.jpg";
 import growth from "../assets/growrh.jpg";
+import mobileImage from "../assets/mobileImage.webp";
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const cards = [
@@ -43,14 +44,14 @@ const Home = () => {
 
   return (
     <>
-      <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-45">
+      <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-40">
         <div className=" w-[600px]">
-          <p className="mb-5 font-bold">NEXT GENERATION TECHNOLOGY</p>
+          <p className="mb-3 font-bold">NEXT GENERATION TECHNOLOGY</p>
           <p className="font-bold text-7xl">
             Revolutionalize The Future of{" "}
             <span className="text-[#fd0d34]">Technology</span>
           </p>
-          <p className="mt-8 text-xl text-gray-600">
+          <p className="mt-8 text-lg text-gray-600">
             We're not just building software—we're crafting digital revolutions
             that reshape industries and redefine what's possible.
           </p>
@@ -77,7 +78,10 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div className="relative h-full w-[520px]">
+        <div>
+          <img src={mobileImage} alt="" className="h-[650px] w-[660px] object-cover"/>
+        </div>
+        {/* <div className="relative h-full w-[520px]">
           <div className="w-[220px] h-[300px] absolute top-5 -rotate-5 left-0 z-20 shadow-[0px_0px_5px_gray] bg-slate-700 p-2 rounded-xl">
             <img
               src={collaboration}
@@ -99,7 +103,7 @@ const Home = () => {
               className="w-full h-full object-cover rounded-lg"
             />
           </div>
-        </div>
+        </div> */}
       </div>
       <Features />
       <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100">
@@ -260,7 +264,7 @@ const Home = () => {
 
       {/* Numbers data */}
       {/* Numbers data */}
-      <div className="relative mt-30 px-[140px] py-16">
+      <div className="relative mt-30 px-[140px] py-20">
         {/* Background image with blur */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -268,15 +272,15 @@ const Home = () => {
         ></div>
 
         {/* Gray overlay */}
-        <div className="absolute inset-0 bg-gray-700/60"></div>
+        <div className="absolute inset-0 bg-gray-600/50"></div>
 
         {/* Glass container */}
-        <div className="relative w-full bg-white/30 backdrop-blur-md rounded-2xl shadow-lg p-10 flex justify-around">
+        <div className="relative w-full bg-white/40 backdrop-blur-md rounded-2xl shadow-lg p-10 py-12 flex justify-around">
           {/* Stat 1 */}
           <div className="flex flex-col items-center">
-            <div className="text-[50px] font-bold text-[#d70e36]">350 +</div>
+            <div className="text-[50px] font-bold text-[#d70e36]">98 %</div>
             <div className=" font-semibold text-lg">
-              COMPLETED PROJECTS
+              CLIENT SATISFACTION
             </div>
           </div>
 
@@ -284,7 +288,7 @@ const Home = () => {
           <div className="flex flex-col items-center">
             <div className="text-[50px] font-bold text-[#d70e36]">500 +</div>
             <div className=" font-semibold text-lg">
-              HAPPY CLIENTS
+              PROJECT COMPLETED
             </div>
           </div>
 
