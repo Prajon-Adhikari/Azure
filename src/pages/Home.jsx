@@ -260,7 +260,7 @@ const Home = () => {
 
       {/* Numbers data */}
       {/* Numbers data */}
-      <div className="relative mt-30 px-[140px] py-16">
+      <div className="relative mt-30 px-[140px] py-20">
         {/* Background image with blur */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -271,12 +271,12 @@ const Home = () => {
         <div className="absolute inset-0 bg-gray-700/60"></div>
 
         {/* Glass container */}
-        <div className="relative w-full bg-white/30 backdrop-blur-md rounded-2xl shadow-lg p-10 flex justify-around">
+        <div className="relative w-full bg-white/30 backdrop-blur-md rounded-2xl shadow-lg p-10 py-12 flex justify-around">
           {/* Stat 1 */}
           <div className="flex flex-col items-center">
-            <div className="text-[50px] font-bold text-[#d70e36]">350 +</div>
+            <div className="text-[50px] font-bold text-[#d70e36]">98 %</div>
             <div className=" font-semibold text-lg">
-              COMPLETED PROJECTS
+              CLIENT SATISFACTION
             </div>
           </div>
 
@@ -284,7 +284,7 @@ const Home = () => {
           <div className="flex flex-col items-center">
             <div className="text-[50px] font-bold text-[#d70e36]">500 +</div>
             <div className=" font-semibold text-lg">
-              HAPPY CLIENTS
+              PROJECT COMPLETED
             </div>
           </div>
 
