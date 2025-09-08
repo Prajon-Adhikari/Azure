@@ -19,8 +19,7 @@ import coding4 from "../assets/coding4.jpg";
 import coding5 from "../assets/coding5.jpg";
 import growth from "../assets/growrh.jpg";
 const Home = () => {
-  const [activeIndex, setActiveIndex] = useState(0); // first div stretched initially
-
+  const [activeIndex, setActiveIndex] = useState(0);
   const cards = [
     {
       title: "Launch Your Career",
@@ -103,7 +102,7 @@ const Home = () => {
         </div>
       </div>
       <Features />
-      <div className="  h-[690px] my-30 px-[100px] py-[70px]  flex gap-30 bg-gray-100">
+      <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100">
         <div className="w-[600px] relative">
           <img
             src={innovation}
