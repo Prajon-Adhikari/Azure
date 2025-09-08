@@ -42,7 +42,7 @@ const Footer = () => {
               </Link>
             </li>
             <li>
-              <Link to="/blog" className="hover:underline text-white">
+              <Link to="/blogs" className="hover:underline text-white">
                Blogs
               </Link>
             </li>
@@ -103,7 +103,7 @@ const Footer = () => {
 
             </li>
             <li>
-              <FontAwesomeIcon icon={faLocationDot} className="text-[#A2A2A2] pr-2"/> Bharatpur-7, Chitwan
+              <FontAwesomeIcon icon={faLocationDot} className="text-[#A2A2A2] pr-2"/> Bharatpur-10, Chitwan
             </li>
           </ul>
           <h4 className="font-bold text-xl mb-2 pt-5">Opening Hours</h4>
