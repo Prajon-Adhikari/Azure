@@ -65,7 +65,7 @@ export default function Reviews() {
         {reviews.map((review, index) => (
           <div
             key={index}
-            className="w-[400px] shadow-[0px_0px_5px_gray] rounded-lg px-6 py-4 bg-white"
+            className="w-[400px] shadow-[0px_0px_5px_gray] cursor-pointer rounded-lg px-6 py-4 bg-white hover:shadow-[0px_0px_10px_gray]"
           >
             <div className="flex justify-between items-center ">
               <div className="flex items-center gap-4">
