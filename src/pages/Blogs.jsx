@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import AddBlog from "../components/AddBlog";
 import blogImage from "../assets/blogImage.jpeg";
+import BlogsCard from "../components/BlogsCard";
 import aboutuscoding1 from "../assets/aboutuscoding1.jpg";
 import aboutuscoding2 from "../assets/aboutuscoding2.jpg";
 import aboutusheroimage2 from "../assets/aboutusheroimage2.jpg";
@@ -140,7 +141,7 @@ const Blog = () => {
       </div>
 
       {/* What's New Section */}
-      <div className="today mx-[140px] mt-6">
+      <div className="today mx-[140px] mt-10">
         <div className="h_TitleContainer flex">
           <div className="h-12 w-1 bg-red-600 mr-3"></div>
           <div className="paragraph text-4xl">
@@ -226,34 +227,18 @@ const Blog = () => {
           <p className="text-gray-500">No blogs available yet.</p>
         ) : (
           <>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-pointer">
-              {currentBlogs.map((blog) => (
-                <div
-                  key={blog.id}
-                  className="p-4 border rounded-lg shadow hover:shadow-lg transition bg-white"
-                >
-                  {blog.image && (
-                    <img
-                      src={blog.image}
-                      alt={blog.title}
-                      className="w-full h-40 object-cover rounded mb-3"
-                    />
-                  )}
-                  <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full">
-                    {blog.category}
-                  </span>
-                  <h3 className="text-lg font-semibold mt-2">{blog.title}</h3>
-                  <p className="text-sm text-gray-600 mt-1 line-clamp-3">
-                    {blog.description}
-                  </p>
-               
-                  <p className="text-xs text-gray-400 mt-2">
-                    {new Date(blog.createdAt).toLocaleDateString()}
-                  </p>
-                
-                </div>
-              ))}
-            </div>
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 cursor-pointer">
+      {currentBlogs.map((blog) => (
+        <BlogsCard
+          key={blog.id}
+          title={blog.title}
+          description={blog.description}
+          image={blog.image}
+          category={blog.category}
+          createdAt={blog.createdAt}
+        />
+      ))}
+    </div>
 
             {/* Pagination */}
             <div className="flex justify-center gap-2 mt-6">

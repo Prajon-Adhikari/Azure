@@ -14,8 +14,12 @@ const BlogsCard = ({ title, description, image, category, createdAt }) => {
 
       {/* Category */}
       {category && (
-        <span className="text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full">
-          {category}
+        <span className={`text-xs bg-blue-100 text-blue-600 px-2 py-1 rounded-full
+              ${category === "Web Development" ? "bg-blue-300 text-blue-900" : ""}
+      ${category === "Mobile app development" ? "bg-green-300 text-green-900" : ""}
+      ${category === "Courses & education" ? "bg-yellow-300 text-yellow-900" : ""}
+        `}>
+          {category }
         </span>
       )}
 
@@ -23,15 +27,31 @@ const BlogsCard = ({ title, description, image, category, createdAt }) => {
       <h3 className="text-lg font-semibold mt-2">{title}</h3>
 
       {/* Description */}
-      <p className="text-sm text-gray-600 mt-1 line-clamp-3">{description}</p>
+      <p className="text-sm text-gray-600 mt-1 " 
+       style={{
+                display: "-webkit-box",
+                WebkitLineClamp: 3,
+                WebkitBoxOrient: "vertical",
+                lineHeight: "1.3rem", 
+                height: "4.5rem", 
+              }}>{description}</p>
 
       {/* Date */}
     
+    <div className="flex justify-between mx-3">
       {createdAt && (
-        <p className="text-xs text-gray-400 mt-2">
-          {new Date(createdAt).toLocaleDateString()}
-        </p>
+        <p className="text-xs text-gray-800 mt-2 italic">
+    {new Date(createdAt).toLocaleDateString("en-US", {
+      month: "short", // Oct
+      day: "numeric", // 15
+      year: "numeric", // 2025
+    })}
+  </p>
+
       )}
+      <button className="text-red-600 italic
+      cursor-pointer">View More <span> &rarr; </span></button>
+      </div>
       </div>
     
  
