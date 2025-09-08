@@ -262,7 +262,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-       <section className="bg-green-50 py-12">
+       <section className="bg-gray-100 py-12">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 items-center">
         {/* Left Side Text */}
         <div>
