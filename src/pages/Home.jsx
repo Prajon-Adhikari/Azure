@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import heroImage from "../assets/azureLanging01.jpg";
 import innovation from "../assets/innovation.jpg";
 import collaboration from "../assets/collaboration.jpg";
@@ -17,7 +17,31 @@ import Reviews from "./Reviews";
 import coding3 from "../assets/coding3.jpg";
 import coding4 from "../assets/coding4.jpg";
 import coding5 from "../assets/coding5.jpg";
+import growth from "../assets/growrh.jpg";
 const Home = () => {
+  const [activeIndex, setActiveIndex] = useState(0); // first div stretched initially
+
+  const cards = [
+    {
+      title: "Launch Your Career",
+      description:
+        "Start your journey with our comprehensive internship programs designed for growth.",
+      image: innovation,
+    },
+    {
+      title: "Masters Your Skills",
+      description:
+        "Enhance your expertise with hands-on training and real-world projects.",
+      image: collaboration,
+    },
+    {
+      title: "Create & Innovate",
+      description:
+        "Bring your unique ideas to life with our innovation-driven ecosystem.",
+      image: heroImage,
+    },
+  ];
+
   return (
     <>
       <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-45">
@@ -79,7 +103,7 @@ const Home = () => {
         </div>
       </div>
       <Features />
-       <div className="  h-[690px] my-30 px-[100px] py-[70px]  flex gap-30 bg-red-50 ">
+      <div className="  h-[690px] my-30 px-[100px] py-[70px]  flex gap-30 bg-gray-100">
         <div className="w-[600px] relative">
           <img
             src={innovation}
@@ -172,11 +196,68 @@ const Home = () => {
           </button>
         </div>
       </div>
+
+      {/* Build Your Project Section */}
+      <div className="px-[150px] mt-10">
+        <h5 className="font-semibold text-xl pl-1 pb-3">
+          Join Our Innovation Journey
+        </h5>
+        <p className="text-6xl w-[500px] font-bold">
+          Build Your Future With{" "}
+          <span className="text-[#f14769]">Azure Dev</span>
+        </p>
+
+        <div className="mt-12 flex gap-6">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              onClick={() => setActiveIndex(index)}
+              className={`transition-all duration-500 ease-in-out cursor-pointer 
+                h-[300px] p-8 rounded-3xl flex flex-col justify-between shadow-md
+                ${
+                  activeIndex === index
+                    ? "w-[600px] bg-gray-200"
+                    : "w-[300px] bg-red-200"
+                }`}
+            >
+              <div className="flex h-full gap-10">
+                <div>
+                  <div className="flex flex-col justify-between h-full">
+                    <div>
+                      <h2 className="font-bold text-3xl w-[250px]">
+                        {card.title}
+                      </h2>
+                      {activeIndex === index && (
+                        <p className="text-lg mt-4 w-[300px]">
+                          {card.description}
+                        </p>
+                      )}
+                    </div>
+                    <div className="flex justify-between items-end">
+                      <button className="text-lg font-semibold">
+                        Read more <span className="ml-2 text-xl">&rarr;</span>
+                      </button>
+                      {activeIndex !== index && (
+                        <button className="text-2xl bg-white px-2 pb-1 rounded-full">
+                          &#8599;
+                        </button>
+                      )}
+                    </div>
+                  </div>
+                </div>
+                <div className="h-full">
+                  {activeIndex === index && (
+                      <img src={card.image} className="w-[190px] h-full rounded-xl object-cover"/>
+                    )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
       <Reviews />
     </>
   );
 };
-
-
 
 export default Home;
