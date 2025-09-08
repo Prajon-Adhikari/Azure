@@ -246,14 +246,64 @@ const Home = () => {
                 </div>
                 <div className="h-full">
                   {activeIndex === index && (
-                      <img src={card.image} className="w-[190px] h-full rounded-xl object-cover"/>
-                    )}
+                    <img
+                      src={card.image}
+                      className="w-[190px] h-full rounded-xl object-cover"
+                    />
+                  )}
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Numbers data */}
+      {/* Numbers data */}
+      <div className="relative mt-30 px-[140px] py-16">
+        {/* Background image with blur */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${aboutUsHeroImage})` }}
+        ></div>
+
+        {/* Gray overlay */}
+        <div className="absolute inset-0 bg-gray-700/60"></div>
+
+        {/* Glass container */}
+        <div className="relative w-full bg-white/30 backdrop-blur-md rounded-2xl shadow-lg p-10 flex justify-around">
+          {/* Stat 1 */}
+          <div className="flex flex-col items-center">
+            <div className="text-[50px] font-bold text-[#d70e36]">350 +</div>
+            <div className=" font-semibold text-lg">
+              COMPLETED PROJECTS
+            </div>
+          </div>
+
+          {/* Stat 2 */}
+          <div className="flex flex-col items-center">
+            <div className="text-[50px] font-bold text-[#d70e36]">500 +</div>
+            <div className=" font-semibold text-lg">
+              HAPPY CLIENTS
+            </div>
+          </div>
+
+          {/* Stat 3 */}
+          <div className="flex flex-col items-center">
+            <div className="text-[50px] font-bold text-[#d70e36]">12 +</div>
+            <div className=" font-semibold text-lg">
+              YEAR EXPERIENCE
+            </div>
+          </div>
+
+          {/* Stat 4 */}
+          <div className="flex flex-col items-center">
+            <div className="text-[50px] font-bold text-[#d70e36]">50 +</div>
+            <div className=" font-semibold text-lg">TEAM MEMBERS</div>
+          </div>
+        </div>
+      </div>
+
       <Reviews />
     </>
   );
