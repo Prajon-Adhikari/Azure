@@ -7,7 +7,7 @@ import ScrollToTop from '@/pages/ScrollToTop'
 const Layout = () => {
   return (
   <>
-   <ScrollToTop />
+      <ScrollToTop />
       <Navbar />
       <Outlet />
       <Footer />
