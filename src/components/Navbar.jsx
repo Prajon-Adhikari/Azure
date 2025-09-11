@@ -1,27 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { ChevronDown } from "lucide-react";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+  const [animateKey, setAnimateKey] = useState(0);
+
+  // Re-trigger animations whenever the route changes
+  useEffect(() => {
+    setAnimateKey(prev => prev + 1);
+  }, [location]);
+  
 
   return (
     <>
-      <nav className="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50">
+      <nav key={animateKey}  className="bg-white text-gray-800 shadow-md fixed top-0 left-0 right-0 z-50">
         {/* Top bar */}
         <div className="bg-red-600 flex justify-between px-[140px] text-white text-sm py-1">
-          <p>Bharatpur-10,Chitwan</p>
-          <p>Let's Build Future Togehter!</p>
-          <p>hello@azure.com.np</p>
+          <p className="left-slide-animation">Bharatpur-10,Chitwan</p>
+          <p className="right-slide-animation">Let's Build Future Togehter!</p>
+          <p className="right-slide-animation">hello@azure.com.np</p>
         </div>
 
         {/* Main Nav */}
         <div className="container mx-auto flex justify-between items-center px-[140px] py-2">
-          <Link to="/" className="text-2xl font-bold text-red-600">
+          <Link to="/" className="text-2xl font-bold text-red-600 left-slide-animation">
             AzureDev
           </Link>
 
-          <div className="space-x-14 relative flex items-center">
+          <div className="space-x-14 relative flex items-center right-slide-animation">
             {/* Home */}
             <NavLink
               to="/"

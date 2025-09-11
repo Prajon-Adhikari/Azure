@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <>
       <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-30">
-        <div className=" w-[600px] animation">
+        <div className=" w-[600px] left-slide-animation">
           <p className="mb-3 font-bold">NEXT GENERATION TECHNOLOGY</p>
           <p className="font-bold text-7xl">
             Revolutionalize The Future of{" "}
@@ -78,7 +78,7 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div>
+        <div className="right-slide-animation">
           <img src={mobileImage} alt="" className="h-[660px] w-[700px] object-cover"/>
         </div>
         {/* <div className="relative h-full w-[520px]">
@@ -134,7 +134,7 @@ const Home = () => {
             className="h-[210px] w-[290px] object-cover absolute bottom-0 right-5 z-20  rounded-4xl shadow-[0px_0px_8px_gray]"
           />
         </div>
-        <div>
+        <div className="right-slide-animation">
           <h4 className="font-bold text-2xl border-l-4 pl-4 border-[#da183f]">
             Our Story in Motion
           </h4>
