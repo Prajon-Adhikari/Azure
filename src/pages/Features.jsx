@@ -33,7 +33,7 @@ const FeatureData = [
 ];
 
   return (
-    <section className="py-16 mt-4 ">
+    <section className="py-16 mt-4 animation">
       <div className=" mx-[140px] px-6">
         <h2 className="text-5xl font-bold text-center mb-16 ">Our Featured <span className="text-[#fd0d34]">Course</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

@@ -45,7 +45,7 @@ const Home = () => {
   return (
     <>
       <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-30">
-        <div className=" w-[600px]">
+        <div className=" w-[600px] animation">
           <p className="mb-3 font-bold">NEXT GENERATION TECHNOLOGY</p>
           <p className="font-bold text-7xl">
             Revolutionalize The Future of{" "}
@@ -105,8 +105,8 @@ const Home = () => {
           </div>
         </div> */}
       </div>
-      <Features />
-      <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100">
+      <Features/>
+      <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100 animation">
         <div className="w-[600px] relative">
           <img
             src={innovation}
@@ -201,7 +201,7 @@ const Home = () => {
       </div>
 
       {/* Build Your Project Section */}
-      <div className="px-[150px] mt-10">
+      <div className="px-[150px] mt-10 animation">
         <h5 className="font-semibold text-xl pl-1 pb-3">
           Join Our Innovation Journey
         </h5>
@@ -263,8 +263,7 @@ const Home = () => {
       </div>
 
       {/* Numbers data */}
-      {/* Numbers data */}
-      <div className="relative mt-30 px-[140px] py-20">
+      <div className="relative mt-30 px-[140px] py-20 animation">
         {/* Background image with blur */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -308,7 +307,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Reviews />
+      <Reviews/>
     </>
   );
 };

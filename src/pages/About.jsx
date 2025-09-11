@@ -68,7 +68,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="px-[140px] flex gap-20 items-center py-22 h-[700px]">
+        <div className="px-[140px] flex gap-20 items-center py-22 h-[700px] animation">
           <div className="w-[600px]">
             <div>
               <div className="text-5xl text-[#fd0d34] font-bold">
@@ -112,7 +112,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="px-[140px] pb-20 flex justify-between">
+        <div className="px-[140px] pb-20 flex justify-between animation">
           {/* Card 1 */}
           <div className="relative w-[400px] overflow-hidden bg-white shadow-[0px_0px_5px_#7F8CAA] py-4 px-8 rounded-lg group cursor-pointer">
             {/* Sliding background */}
@@ -172,7 +172,7 @@ const About = () => {
         </div>
 
         <div
-          className="py-20 bg-gray-300"
+          className="py-20 bg-gray-300 animation"
           style={{
             clipPath:
               "polygon(0% 10%, 40% 0%, 100% 10%, 100% 10%, 100% 94%, 75% 88%, 0% 90%)",
@@ -211,7 +211,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex items-center px-[150px] gap-30 py-22 ">
+        <div className="flex items-center px-[150px] gap-30 py-22 animation">
           <div className="flex gap-7 text-white">
             <div>
               {/* Image 1 → Red Gradient Overlay */}
@@ -351,7 +351,7 @@ const About = () => {
                 <FontAwesomeIcon icon={faSmile} className="text-3xl text-[#fd0d34]"/>
             </div>
         </div> */}
-        <div className="px-[150px] py-10">
+        <div className="px-[150px] py-10 animation">
           <h1 className="text-center text-5xl font-bold">
             Powerful Features to Enhance
           </h1>
@@ -427,7 +427,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="px-[240px] py-18">
+        <div className="px-[240px] py-18 animation">
           <h1 className="text-5xl text-center pb-3 font-bold">Our Team Behind It</h1>
           <p className="text-center pb-12 text-gray-600">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum,
