@@ -44,7 +44,7 @@ const Home = () => {
 
   return (
     <>
-      <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-40">
+      <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-30">
         <div className=" w-[600px]">
           <p className="mb-3 font-bold">NEXT GENERATION TECHNOLOGY</p>
           <p className="font-bold text-7xl">
@@ -79,7 +79,7 @@ const Home = () => {
           </div>
         </div>
         <div>
-          <img src={mobileImage} alt="" className="h-[650px] w-[660px] object-cover"/>
+          <img src={mobileImage} alt="" className="h-[660px] w-[700px] object-cover"/>
         </div>
         {/* <div className="relative h-full w-[520px]">
           <div className="w-[220px] h-[300px] absolute top-5 -rotate-5 left-0 z-20 shadow-[0px_0px_5px_gray] bg-slate-700 p-2 rounded-xl">
