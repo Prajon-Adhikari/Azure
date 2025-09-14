@@ -44,8 +44,8 @@ const Home = () => {
 
   return (
     <>
-      <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-40">
-        <div className=" w-[600px]">
+      <div className=" w-full h-[100vh] flex items-center mt-[65px] px-[135px] gap-30">
+        <div className=" w-[600px] left-slide-animation">
           <p className="mb-3 font-bold">NEXT GENERATION TECHNOLOGY</p>
           <p className="font-bold text-7xl">
             Revolutionalize The Future of{" "}
@@ -78,8 +78,8 @@ const Home = () => {
             </button>
           </div>
         </div>
-        <div>
-          <img src={mobileImage} alt="" className="h-[650px] w-[660px] object-cover"/>
+        <div className="right-slide-animation">
+          <img src={mobileImage} alt="" className="h-[660px] w-[700px] object-cover"/>
         </div>
         {/* <div className="relative h-full w-[520px]">
           <div className="w-[220px] h-[300px] absolute top-5 -rotate-5 left-0 z-20 shadow-[0px_0px_5px_gray] bg-slate-700 p-2 rounded-xl">
@@ -105,9 +105,9 @@ const Home = () => {
           </div>
         </div> */}
       </div>
-      <Features />
-      <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100">
-        <div className="w-[600px] relative">
+      <Features/>
+      <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100 ">
+        <div className="w-[600px] relative animation">
           <img
             src={innovation}
             alt=""
@@ -134,7 +134,7 @@ const Home = () => {
             className="h-[210px] w-[290px] object-cover absolute bottom-0 right-5 z-20  rounded-4xl shadow-[0px_0px_8px_gray]"
           />
         </div>
-        <div>
+        <div className="animation">
           <h4 className="font-bold text-2xl border-l-4 pl-4 border-[#da183f]">
             Our Story in Motion
           </h4>
@@ -201,7 +201,7 @@ const Home = () => {
       </div>
 
       {/* Build Your Project Section */}
-      <div className="px-[150px] mt-10">
+      <div className="px-[150px] mt-10 animation">
         <h5 className="font-semibold text-xl pl-1 pb-3">
           Join Our Innovation Journey
         </h5>
@@ -263,21 +263,20 @@ const Home = () => {
       </div>
 
       {/* Numbers data */}
-      {/* Numbers data */}
-      <div className="relative mt-30 px-[140px] py-20">
+      <div className="relative mt-30 px-[140px] py-20 ">
         {/* Background image with blur */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center "
           style={{ backgroundImage: `url(${aboutUsHeroImage})` }}
         ></div>
 
         {/* Gray overlay */}
-        <div className="absolute inset-0 bg-gray-600/50"></div>
+        <div className="absolute inset-0 bg-gray-500/30"></div>
 
         {/* Glass container */}
-        <div className="relative w-full bg-white/40 backdrop-blur-md rounded-2xl shadow-lg p-10 py-12 flex justify-around">
+        <div className="relative w-full animation bg-white/40 backdrop-blur-md rounded-2xl shadow-lg p-10 py-12 flex justify-around">
           {/* Stat 1 */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ">
             <div className="text-[50px] font-bold text-[#d70e36]">98 %</div>
             <div className=" font-semibold text-lg">
               CLIENT SATISFACTION
@@ -308,7 +307,7 @@ const Home = () => {
         </div>
       </div>
 
-      <Reviews />
+      <Reviews/>
     </>
   );
 };

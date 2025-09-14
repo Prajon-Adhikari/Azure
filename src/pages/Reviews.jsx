@@ -56,7 +56,7 @@ export default function Reviews() {
   ];
 
   return (
-    <div className="px-[140px] py-20">
+    <div className="px-[140px] py-20 animation">
       <h2 className="text-center font-semibold text-5xl">Google Reviews</h2>
       <p className="text-gray-600 text-lg text-center py-4">
         See what our clients are saying about us on Google
