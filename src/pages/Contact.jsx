@@ -247,10 +247,9 @@ const Contact = () => {
               Connecting Near and Far
             </p>
             <h3 className="text-2xl text-black font-bold mb-2">Headquarters</h3>
-            <p className="text-gray-700 text-lg">Code Arena</p>
+            <p className="text-gray-700 text-lg">AzureDev</p>
             <p className="text-gray-700 text-lg">Chitwan, Nepal</p>
-            <p className="text-gray-700 text-lg">TechByte</p>
-            <p className="text-gray-700 text-lg">Bharatpur, Ward-12</p>
+            <p className="text-gray-700 text-lg">Bharatpur, Ward-10</p>
             <a
               href=""
               className="text-blue-500 text-2xl underline mt-4 inline-block"
