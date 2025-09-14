@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
+
   const [animateKey, setAnimateKey] = useState(0);
 
   // Re-trigger animations whenever the route changes
@@ -32,6 +33,7 @@ const Navbar = () => {
             AzureDev
           </Link>
 
+          <div className="space-x-14 relative flex items-center">
           <div className="space-x-14 relative flex items-center right-slide-animation">
             {/* Home */}
             <NavLink
@@ -277,6 +279,7 @@ const Navbar = () => {
             </NavLink>
           </div>
         </div>
+          </div>
         </div>
       </nav>
     </>
