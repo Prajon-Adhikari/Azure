@@ -3,7 +3,6 @@ import heroImage from "../assets/azureLanging01.jpg";
 import innovation from "../assets/innovation.jpg";
 import collaboration from "../assets/collaboration.jpg";
 import aboutUsHeroImage from "../assets/aboutusheroimage3.avif";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMagnifyingGlass,
@@ -11,13 +10,13 @@ import {
   faPlay,
   faCode,
   faLightbulb,
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import Features from "./Features";
 import Reviews from "./Reviews";
 import coding3 from "../assets/coding3.jpg";
 import coding4 from "../assets/coding4.jpg";
 import coding5 from "../assets/coding5.jpg";
-import growth from "../assets/growrh.jpg";
 import mobileImage from "../assets/mobileImage.webp";
 const Home = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -307,6 +306,35 @@ const Home = () => {
         </div>
       </div>
 
+      <div className="px-[140px] mt-30 animation">
+        <h1 className="font-bold text-5xl text-center">Why Choose <span className="text-[#d70e36]">Us</span></h1>
+        <div className="flex justify-center">
+          <p className="text-center text-gray-600 w-[500px] text-lg mb-16 mt-5 font-semibold">Discover how we've helped businesses transform their digital presence and achieve their goals.</p>
+        </div>
+        <div className="flex gap-3">
+          <div>
+            <img src={collaboration} alt="" className="w-[620px] h-[412px] object-cover rounded-md cursor-pointer"/>
+          </div>
+          <div className="flex flex-col gap-3">
+            <div className="flex gap-3">
+              <div className="w-[300px] h-[200px] bg-gray-100 flex flex-col justify-center  cursor-pointer items-center rounded-md">
+                <FontAwesomeIcon icon={faLocationDot} className="text-5xl mb-2 text-[#d70e36]"/>
+                <h1 className="text-3xl font-bold pb-2">Our Location</h1>
+                <p className="font-semibold">Bharatpur-10, Chitwan </p>
+              </div>
+              <img src={aboutUsHeroImage} alt="" className="w-[300px] h-[200px] object-cover rounded-md  cursor-pointer"/>
+            </div>
+            <div className="flex gap-3">
+              <img src={heroImage} alt="" className="w-[300px] h-[200px] object-cover rounded-md  cursor-pointer"/>
+              <div className="w-[300px] h-[200px] bg-gray-100 flex flex-col justify-center items-center rounded-md cursor-pointer">
+                <FontAwesomeIcon icon={faLightbulb} className="text-5xl mb-2 text-orange-300"/>
+                <h1 className="text-3xl font-bold pb-2">Our Location</h1>
+                <p className="font-semibold">Bharatpur-10, Chitwan </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <Reviews/>
     </>
   );
