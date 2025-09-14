@@ -106,8 +106,8 @@ const Home = () => {
         </div> */}
       </div>
       <Features/>
-      <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100 animation">
-        <div className="w-[600px] relative">
+      <div className="  h-[690px] mb-20 mt-10 px-[100px] py-[70px]  flex gap-30 bg-gray-100 ">
+        <div className="w-[600px] relative animation">
           <img
             src={innovation}
             alt=""
@@ -134,7 +134,7 @@ const Home = () => {
             className="h-[210px] w-[290px] object-cover absolute bottom-0 right-5 z-20  rounded-4xl shadow-[0px_0px_8px_gray]"
           />
         </div>
-        <div className="right-slide-animation">
+        <div className="animation">
           <h4 className="font-bold text-2xl border-l-4 pl-4 border-[#da183f]">
             Our Story in Motion
           </h4>
@@ -263,20 +263,20 @@ const Home = () => {
       </div>
 
       {/* Numbers data */}
-      <div className="relative mt-30 px-[140px] py-20 animation">
+      <div className="relative mt-30 px-[140px] py-20 ">
         {/* Background image with blur */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center "
           style={{ backgroundImage: `url(${aboutUsHeroImage})` }}
         ></div>
 
         {/* Gray overlay */}
-        <div className="absolute inset-0 bg-gray-600/50"></div>
+        <div className="absolute inset-0 bg-gray-500/30"></div>
 
         {/* Glass container */}
-        <div className="relative w-full bg-white/40 backdrop-blur-md rounded-2xl shadow-lg p-10 py-12 flex justify-around">
+        <div className="relative w-full animation bg-white/40 backdrop-blur-md rounded-2xl shadow-lg p-10 py-12 flex justify-around">
           {/* Stat 1 */}
-          <div className="flex flex-col items-center">
+          <div className="flex flex-col items-center ">
             <div className="text-[50px] font-bold text-[#d70e36]">98 %</div>
             <div className=" font-semibold text-lg">
               CLIENT SATISFACTION
